@@ -1,0 +1,148 @@
+/* Don't use px in media queries. Using pixels will not abjust to the user's font size setting in the browser and also not to the user's zoom level. */
+
+/* REM and EM do not depend on html font-size in media queries. Instead, 1rem = 1em = 16px */
+
+/* 1366px = HD ready screen */
+
+/**************************************/
+/* 1350px / 16px = 84em */
+/* 84em * 16px = 1344px */
+
+/* BELOW 1344px (Smaller desktops) */
+/**************************************/
+
+
+@media (max-width: 84em) {
+    .hero {
+        max-width: 120rem;
+    }
+    
+    .heading-primary {
+        font-size: 4.4rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    
+}
+
+/**************************************/
+/* 1200px / 16px = 75em */
+
+/* BELOW 1200px (Landscape Tablets) */
+/**************************************/
+
+@media (max-width: 75em) {
+    html {
+        /* 9px / 16px = 56.20% */
+        font-size: 56.25%;
+    }
+
+    .grid {
+        column-gap: 4.8rem;
+        row-gap: 6.4rem;
+    }
+
+    .heading-secondary {
+        font-size: 3.6rem;
+    }
+
+    .heading-tertiary {
+        font-size: 2.4rem;
+    }
+
+    .header {
+        padding: 0 3.2rem;
+    }
+
+    .main-nav-list {
+        gap: 3.2rem;
+    }
+
+    .hero {
+        gap: 4.8rem
+    }
+
+    .testimonials-coontainer {
+        padding: 9.6rem 3.2rem;
+    }
+
+}
+
+/**************************************/
+/* 940px / 16px = 59em */
+/* 59 * 16 = 944px */
+
+/* BELOW 1200px (Landscape Tablets) */
+/**************************************/
+
+@media (max-width: 59em) {
+    /* 8px / 16px = 0.5 */
+    html {
+        font-size: 50% ;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 0 8rem;
+        gap: 6.4rem;
+    }    
+    
+    .hero-text-box,
+    .hero-img-box {
+        text-align: center;
+    }
+
+    .hero-img {
+        width: 60%;
+    }
+
+    .delivered-meals {
+        justify-content: center;
+        margin-top: 3.2rem;
+    }
+
+    .logos img {
+        height: 2.4rem;
+    }
+
+    .step-number {
+        font-size: 7.4rem;
+    }
+
+    .meal-content {
+        padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+    }
+
+    .section-testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .cta {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .cta-form {
+        grid-template-columns: 1fr;
+    }
+
+    .btn--form {
+        margin-top: 1.2rem;
+    }
+
+}
+
+
+/* 
+    - FONT SIZE (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+ 
+    - SPACING (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+ 
+*/
